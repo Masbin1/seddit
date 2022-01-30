@@ -14,7 +14,7 @@ class AddSubidToPostsTable extends Migration
     public function up()
     {
         Schema::table('posts', function (Blueprint $table) {
-            $table->integer('sub_id');
+            $table->integer('sub_id')->nullable();
         });
     }
 

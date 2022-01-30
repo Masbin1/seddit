@@ -22,7 +22,7 @@ class SubController extends Controller
         // Retrieve posts from db sorted by id
         $posts = Post::orderBy('id', 'desc')
                         ->limit(10)
-                        ->where('sub_id', $subId)
+                        ->where('id', $subId)
                         ->get();
 
         // Retrieve comments from db sorted by id 
